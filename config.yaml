@@ -1,0 +1,53 @@
+bot_user_name: "LOWERCASE_BOT_USERNAME"
+oauth_token: "oauth:TOKEN_HERE"
+channels:
+  - "CHANNEL_NAME_1"
+  - "CHANNEL_NAME_2"
+response_chance: .05
+replace_chance: .25
+replacements:
+  single_nouns:
+    - chance: .15
+      response: "Test"
+    - chance: 1
+      response: "TEST"
+  plural_nouns:
+    - chance: 1
+      response: "TESTS"
+  proper_nouns:
+    - chance: 1
+      response: "MR. TEST"
+  adjectives:
+    - chance: 1
+      response: "HAPPY"
+  verbs:
+    - chance: 1 
+      response: "TEST"
+  verbs_past:
+    - chance: 1 
+      response: "TESTED"
+  verbs_ing:
+    - chance: 1 
+      response: "TESTING"
+  adverbs:
+    - chance: 1
+      response: "QUICKLY"
+call_responses:
+  - calls:
+      - "BOT_NAME no"
+    responses:
+      - chance: 1
+        response: "Example response"
+  - calls:
+      - "BOT_NAME"
+    responses:
+      - chance: 1
+        response: "Example response 2"
+  - calls:
+      - "example call"
+      - "example call 2"
+    responses:
+      - chance: 0.5
+        response: "Response!"
+      - chance: 1
+        response: "Response 2!"
